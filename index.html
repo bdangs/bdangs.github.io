@@ -1,44 +1,88 @@
 <!DOCTYPE html>
 <html>
 
-   <head>
-      <title>bdang's website</title>
-   </head>
+<head>
+   <title>bdang's website</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+      }
 
-   <body>
-      <div style = "width:100%">
-		
-         <div style = "background-color:#E3CD81FF; height:100px; width:800px">
-            <h1><center>Welcome to my website<center /></h1>
-         </div>
-			
-         <div style = "background-color:#FC766AFF; height:300px; width:200px; float:left;">
-            <div><center><b>Programming Languages</b></div>
-            <center>C++<br />
-            <center>HTML<br />
-            <center>Java
-         </div>
-		
-         <div style = "background-color:#5B84B1FF; height:300px; width:200px; float:left;">
-            <div><b><center>Links</b></div>
-            <center><a href="https://www.instagram.com/bdangs2k/">Instagram</a><br />
-			<center><a href="https://www.facebook.com/bdangs/">Facebook</a><br />
-			<center><a href="https://steamcommunity.com/id/bddang/">Steam</a><br />
-			<center><a href="https://www.twitch.tv/bddanggaming">Twitch</a><br />
-			<center><a href="https://github.com/bdangs">GitHub</a>
-         </div>
-		 
-		 <div style = "background-color:#FC766AFF; height:300px; width:400px; float:left;" >
-            <div><center><b>Work in progress</b><center /></div>
-	    <center><b><a href="tel:6264168633">Steve</a></b>
-         </div>
-		 
-		 
-		 <div style = "background-color:#E3CD81FF; height:100px; width:800px">
-            <h1><center>The end<center /></h1>
-         </div>
-		 
+      .container {
+         max-width: 100%;
+         overflow: hidden;
+      }
+
+      .header {
+         background-color: #E3CD81FF;
+         height: 100px;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      .content {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      .column {
+         background-color: #FC766AFF;
+         margin: 10px;
+         padding: 10px;
+      }
+
+      .column a {
+         display: block;
+         text-align: center;
+         margin-bottom: 5px;
+         color: white;
+         text-decoration: none;
+      }
+
+      .footer {
+         background-color: #E3CD81FF;
+         height: 100px;
+         margin-top: 20px;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="header">
+         <h1>Welcome to my website</h1>
       </div>
-   </body>
+
+      <div class="content">
+         <div class="column">
+            <h2>Programming Languages</h2>
+            <p>C++</p>
+            <p>HTML</p>
+            <p>Java</p>
+         </div>
+
+         <div class="column">
+            <h2>Links</h2>
+            <a href="https://www.instagram.com/bdangs2k/">Instagram</a>
+            <a href="https://www.facebook.com/bdangs/">Facebook</a>
+            <a href="https://steamcommunity.com/id/bddang/">Steam</a>
+            <a href="https://www.twitch.tv/bddanggaming">Twitch</a>
+            <a href="https://github.com/bdangs">GitHub</a>
+         </div>
+
+         <div class="column">
+            <h2>Work in Progress</h2>
+            <p><a href="tel:6264168633">Steve</a></p>
+         </div>
+      </div>
+
+      <div class="footer">
+         <h1>The end</h1>
+      </div>
+   </div>
+</body>
 
 </html>
